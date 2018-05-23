@@ -69,7 +69,7 @@ public class TournamentController {
 	// Create
 	@PostMapping(path="/tournament") // Map ONLY GET Requests
 	public @ResponseBody ResponseEntity<Tournament> addNewTournament (@RequestParam String tourName, @RequestParam(value = "tournamentparentId", required=false) Integer tournamentparentId,
-			@RequestParam(value = "amountOfPlayers", required=false) Integer amountOfPlayers) {
+			@RequestParam(value = "D", required=false) Integer amountOfPlayers) {
 
 		HttpHeaders headers = new HttpHeaders();
 		Tournament createdTournament = new Tournament();
